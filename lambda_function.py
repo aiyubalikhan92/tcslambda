@@ -20,3 +20,5 @@ def lambda_handler(event, context):
 
     for each in ec2_con_re.instances.filter(Filters=[f1,f2]):
         print(each)
+
+lambda_handler('test','demo')
