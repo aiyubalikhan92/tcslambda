@@ -27,7 +27,7 @@ import numpy as np
 
 arr = np.array([1, 2, 3, 4, 5])
 
-def lambda_handler(i):
+def lambda_handler(i, context):
 	return i+2
 
 applyall = np.vectorize(lambda_handler)
