@@ -33,5 +33,5 @@ def lambda_handler(i):
 applyall = np.vectorize(lambda_handler)
 res = applyall(arr)
 print(res)
-aws s3api create-bucket --bucket aiyubalikhanl
+#aws s3api create-bucket --bucket aiyubalikhanl
 
