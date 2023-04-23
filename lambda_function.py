@@ -23,16 +23,14 @@
 
 # lambda_handler('test','demo')
 
-import numpy
-
 import numpy as np
 
 arr = np.array([1, 2, 3, 4, 5])
 
-arrr = numpy.array([1, 2, 3, 4, 5])
+def lambda_handler(i):
+	return i+2
 
-print(arrr)
+applyall = np.vectorize(lambda_handler)
+res = applyall(arr)
+print(res)
 
-print(arr)
-
-print(type(arr))
