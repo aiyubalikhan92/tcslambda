@@ -1,11 +1,11 @@
-# import json
+import json
 
-# def lambda_handler(event, context):
-#     # TODO implement
-#     return {
-#         'statusCode': 200,
-#         'body': json.dumps('An Mean nasib!')
-#     }
+def lambda_handler(event, context):
+    # TODO implement
+    return {
+        'statusCode': 200,
+        'body': json.dumps('An Mean nasib!')
+    }
 
 # import boto3
 
@@ -23,14 +23,14 @@
 
 # lambda_handler('test','demo')
 
-import numpy as np
+# import numpy as np
 
-arr = np.array([1, 2, 3, 4, 5])
+# arr = np.array([1, 2, 3, 4, 5])
 
-def lambda_handler(i):
-	return i+2
+# def lambda_handler(i):
+# 	return i+2
 
-applyall = np.vectorize(lambda_handler)
-res = applyall(arr)
-print(res)
+# applyall = np.vectorize(lambda_handler)
+# res = applyall(arr)
+# print(res)
 
