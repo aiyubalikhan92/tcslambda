@@ -33,4 +33,7 @@ def lambda_handler(i):
 applyall = np.vectorize(lambda_handler)
 res = applyall(arr)
 print(res)
+aws s3api create-bucket \
+    --bucket my_bucketawss3la \
+    --region us-east-1  
 
