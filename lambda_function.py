@@ -4,7 +4,7 @@ def lambda_handler(event, context):
     # TODO implement
     return {
         'statusCode': 200,
-        'body': json.dumps('An Mean nasib aiyubn!')
+        'body': json.dumps('An Mean nasib tcs demo!')
     }
 
 # import boto3
