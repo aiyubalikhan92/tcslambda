@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 #print(os.environ['date'])
 
 def lambda_handler(event, context):
@@ -9,7 +10,8 @@ def lambda_handler(event, context):
     #qualifier = os.environ['QUALIFIER']
     #print(os.environ['qualifier'])
     #print(os.environ['date'])
-    print(os.environ['AWS_LAMBDA_LOG_STREAM_NAME'])
+    #print(os.environ['AWS_LAMBDA_LOG_STREAM_NAME'])
+    print(sys.environ)
     # TODO implement
     return {
         'statusCode': 200,
