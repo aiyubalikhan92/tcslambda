@@ -4,9 +4,9 @@ import sys
 #print(os.environ['date'])
 
 def lambda_handler(event, context):
-    #os.environ.get("date")
+    os.environ.get("date")
     #os.environ.get('BUILD_ID')
-    #print(os.environ['BUILD_ID'])
+    print(os.environ['date'])
     #qualifier = os.environ['QUALIFIER']
     #print(os.environ['qualifier'])
     #print(os.environ['date'])
