@@ -1,9 +1,10 @@
 import json
 import os
-print(os.environ['date'])
+#print(os.environ['date'])
 
 def lambda_handler(event, context):
-    os.environ.get("date")
+    #os.environ.get("date")
+    os.environ.get('BUILD_ID')
     #print(os.environ['date'])
     #print(os.environ['date'])
     # TODO implement
