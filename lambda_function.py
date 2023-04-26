@@ -9,7 +9,7 @@ def lambda_handler(event, context):
     #qualifier = os.environ['QUALIFIER']
     #print(os.environ['qualifier'])
     #print(os.environ['date'])
-    print os.environ
+    print(os.environ)
     # TODO implement
     return {
         'statusCode': 200,
