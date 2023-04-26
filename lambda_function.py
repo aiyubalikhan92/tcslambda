@@ -3,6 +3,7 @@ import os
 
 def lambda_handler(event, context):
     os.environ.get("date")
+    print(os.environ['date'])
     # TODO implement
     return {
         'statusCode': 200,
