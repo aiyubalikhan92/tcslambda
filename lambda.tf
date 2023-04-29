@@ -36,7 +36,7 @@ resource "aws_lambda_function" "test_lambda" {
   runtime = "python3.9"
  environment {
     variables = {
-      apikey = "date"
+      date = "2023-04-29"
     }
   }
 
