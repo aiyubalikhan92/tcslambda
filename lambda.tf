@@ -34,7 +34,11 @@ resource "aws_lambda_function" "test_lambda" {
   source_code_hash = filebase64sha256(local.location)
 
   runtime = "python3.9"
-
+ environment {
+    variables = {
+      apikey = "date"
+    }
+  }
 
 }
 
