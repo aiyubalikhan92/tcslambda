@@ -26,14 +26,14 @@ resource "aws_lambda_function" "test_lambda" {
   # If the file is not in the current working directory you will need to include a
   # path.module in the filename.
   filename      = local.location
-  function_name = "welcomee"
+  function_name = "function_name"
   role          = aws_iam_role.test_role.arn
   handler       = "welcome.hello"
 
 
   source_code_hash = filebase64sha256(local.location)
 
-  runtime = "python3.7"
+  runtime = "python3.9"
 
 
 }
@@ -47,5 +47,5 @@ data "archive_file" "init" {
 }
 
 locals {
-  location = "output/welcome1.0.zip"
+  location = "output/welcometest.zip"
 }
