@@ -47,5 +47,5 @@ data "archive_file" "init" {
 }
 
 locals {
-  location = "output/welcome1.0.zip"
+  location = "output/welcomee.zip"
 }
