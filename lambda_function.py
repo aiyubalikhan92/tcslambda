@@ -5,7 +5,7 @@ import sys
 #print(os.environ['date'])
 
 def lambda_handler(event, context):
-    #print(event['date'])
+    print(event['date'])
     #thisInstanceID = event['date']
     #print("date: " + thisInstanceID)
     #os.environ.get("date")
