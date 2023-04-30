@@ -14,7 +14,7 @@ def lambda_handler(event, context):
     #print(os.environ['qualifier'])
     #print(os.environ['date'])
     #print(os.environ['AWS_LAMBDA_LOG_STREAM_NAME'])
-    print(os.environ)
+    #print(os.environ)
     # TODO implement
     return {
         'statusCode': 200,
